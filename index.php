@@ -1,26 +1,38 @@
-<?php
-class A{
+<?php 
+Class A {
+	public function linear_equstion ($a,$b) {
+		if ($a == 0){
+		  return NULL;
+		}
+		return $this->X=-($b/$a);
+	}
+	protected $X;
 }
-class B extendens A{
-protecd $a;
-public function_construct($a)
-{
-$this->a=$a
+Class B extends A {
+    protected function dis($a, $b, $c) {
+		$x = ($b**2)-4*$a*$c;
+		return $x;
+	}
+	public function qu_equation($a, $b, $c){
+		$x = $this->linear_equstion($b,$c);
+		if($a == 0){
+			return $this->linear_equstion($b,$c);
+		}
+		if ($x > 0) {
+			return $this->X=array (
+				-($b+sqrt($b**2-4*$a*$c)/2*$a),
+				-($b-sqrt($b**2-4*$a*$c)/2*$a)
+			);
+		}
+		if ($x == 0) {
+			return $this->X=array(-($b/(2*$a)));
+		}
+		return $this->X=NULL;
+	}
 }
-}
-class C extends B
-{
-protected $b;
-public function _construct($b,$a)
-{
-$this->b=$b;
-parent::_construct($a)
-}
-}
-$a=new A();
-$B1=new B($a);
-$B2=new B($B1)
-$C=new C($B2,$a);
-$B3=NEW B($C);
-var_dump ($B3);
-?>
+	$a = new A();
+	$b = new B();
+	
+	
+	?>
+			
