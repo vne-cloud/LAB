@@ -1,0 +1,25 @@
+{
+    "name": "vne-cloud/lab",
+    "type": "project",
+    "authors": [
+        {
+            "name": "stepanov",
+            "email": "pikachu1919@mail.ru"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rok9ru/trpo-core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/vne-cloud/Stepanov.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rok9ru/trpo-core":"^2.0",
+        "vne-cloud/stepanov":"^1.0"
+    }
+}

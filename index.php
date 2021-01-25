@@ -3,13 +3,7 @@
 use Step\MyLog;
 use Step\StepException;
 use Step\QuEquation;
-include "core/EquationInterface.php";
-include "core/LogAbstract.php";
-include "core/LogInterface.php";
-include "Step/MyLog.php";
-include "Step/Equation.php";
-include "Step/QuEquation.php";
-include "Step/StepException.php";
+require_once(__DIR__."/vendor/autoload.php");
 
 ini_set("display_errors", 1);
 error_reporting (-1);
